@@ -14,8 +14,7 @@ Create local DB directories. They will mount to the DBs in the docker.
 
 ```mkdir -p ~/Databse/mysql/data-master```
 
-(On Windows or you want your own directory, make sure also change the ```volumes``` choice in docker-compose.yml for both [mysql-master](https://github.com/mayinghan/mysql-master-slave-service/blob/cac8d658c878b4473c5367d2681711fa124d79fc/docker-compose.yml#L5) and [mysql-slave](https://github.com/mayinghan/mysql-master-slave-service/blob/cac8d658c878b4473c5367d2681711fa124d79fc/docker-compose.yml#L19)
-
+(On Windows or you want your own directory, make sure also change the ```volumes``` choice in docker-compose.yml for both mysql-master and mysql-slave
 
 ## Step 1
 build and start the docker containers
