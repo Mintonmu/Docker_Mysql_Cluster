@@ -1,0 +1,15 @@
+version: '2'
+services:
+  rabbit-node1:
+    #setup host name
+    hostname: rabbit-node1
+    #use docker images
+    image: rabbitmq:management
+    #ports setting
+    ports:
+      - 15672:15672
+      - 5672:5672
+    restart: always
+    #volumes setting
+    volumes:
+        - ~/www/rabbitmq:/var/lib/rabbitmq
